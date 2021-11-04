@@ -24,7 +24,6 @@ public class ShootFB implements Listener {
                     }
                     Fireball fb = event.getPlayer().launchProjectile(Fireball.class);
                     fb.setYield(3f);
-                    fb.
                     if (event.getPlayer().getGameMode() == GameMode.ADVENTURE || event.getPlayer().getGameMode() == GameMode.SURVIVAL) {
                         event.getItem().setAmount(event.getItem().getAmount() - 1);
                     }
