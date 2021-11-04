@@ -12,6 +12,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         ItemManager.init();
+        this.saveDefaultConfig();
         this.getServer().getPluginManager().registerEvents(new ShootFB(), this);
         this.getLogger().log(Level.INFO, "Throwable Fireballs v1.0 loaded!");
     }
