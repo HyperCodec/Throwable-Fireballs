@@ -33,7 +33,6 @@ public class ItemManager {
         List<String> lore = new ArrayList<>();
         lore.add(ChatColor.BLUE + "" + ChatColor.ITALIC + "Throwable fire charge!");
         meta.setLore(lore);
-        meta.addEnchant(new Glow(key), 1, true);
         meta.getPersistentDataContainer().set(key, PersistentDataType.INTEGER, 1);
         fb.setItemMeta(meta);
 

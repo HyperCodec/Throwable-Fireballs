@@ -23,7 +23,7 @@ public class ShootFB implements Listener {
                         event.setCancelled(true);
                     }
                     Fireball fb = event.getPlayer().launchProjectile(Fireball.class);
-                    fb.setYield(3f);
+                    fb.setYield(plugin.getConfig().getInt("explosionpower"));
                     if (event.getPlayer().getGameMode() == GameMode.ADVENTURE || event.getPlayer().getGameMode() == GameMode.SURVIVAL) {
                         event.getItem().setAmount(event.getItem().getAmount() - 1);
                     }
