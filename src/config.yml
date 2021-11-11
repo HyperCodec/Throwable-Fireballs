@@ -1,1 +1,3 @@
-explosionpower: 3
+explosionpower: 2
+knockback: 10 # max is 10
+customkb: true
